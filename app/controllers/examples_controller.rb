@@ -12,4 +12,10 @@ class ExamplesController < ApplicationController
     end
     render "lotto.html.erb"
   end
+
+  def counter_method
+    @count = 0
+    @count += 1
+    render "counter.html.erb"
+  end
 end
